@@ -98,6 +98,8 @@ b, strong { font-weight: 600; }
 /* Why I built this */
 .why { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr); gap: 44px; align-items: center; }
 .why-text { display: grid; gap: 16px; min-width: 0; }
+.byline { display: flex; align-items: center; gap: 16px; }
+.byline img { width: 88px; height: 88px; border-radius: 50%; object-fit: cover; border: 3px solid var(--hi); flex: none; }
 .why h2 { font-size: clamp(28px, 3.8vw, 38px); line-height: 1.15; }
 
 .story { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 44px; }
@@ -289,7 +291,7 @@ footer p { color: var(--muted); font-size: 15px; max-width: 64ch; }
 
   <section class="why" aria-labelledby="why-title">
     <div class="why-text">
-      <p class="label">Why I built this</p>
+      <div class="byline"><img src="img/olivia-dydyna.jpg" alt="Olivia Dydyna" width="88" height="88"><p class="label">Why I built this · Olivia Dydyna</p></div>
       <h2 id="why-title">I built a customer success department from scratch in 2019. This is how I'd build it today.</h2>
       <p class="prose">At On the Map Marketing I hired and trained a team of 7, designed the onboarding process, and created a formal Sales to Customer Success handoff. We managed 200+ subscription accounts, and our retention strategy extended average customer lifespan by 3 months. Before that, at Vibes, I onboarded national retail brands onto an enterprise mobile platform. Since 2021 I've led 700+ people through workshops and 1:1 coaching. Threadwell is my answer to one question: what does that department look like with AI agents in the loop?</p>
     </div>
