@@ -228,6 +228,15 @@ body[data-focus="human"] .tier.t-human { opacity: 1; }
 .rules p { padding: 20px 0; border-bottom: 1px solid var(--line); }
 .rules p strong { display: block; margin-bottom: 2px; }
 .rules p span { color: var(--muted); }
+.checklist { border: 1px solid var(--line); border-radius: 18px; background: var(--surface); }
+.checklist summary { cursor: pointer; padding: 16px 20px; font-weight: 600; list-style: none; display: flex; justify-content: space-between; gap: 12px; align-items: center; }
+.checklist summary::-webkit-details-marker { display: none; }
+.checklist summary::after { content: "+"; font-size: 22px; color: var(--accent); line-height: 1; }
+.checklist[open] summary::after { content: "\2212"; }
+.checklist .intro { padding: 0 20px 8px; color: var(--muted); }
+.checklist ol { margin: 0; padding: 4px 20px 18px 44px; display: grid; gap: 6px; font-size: 16px; }
+.checklist li::marker { color: var(--accent); font-weight: 600; }
+.checklist .ok { color: var(--agent); font-weight: 600; margin-left: 6px; }
 
 footer { display: grid; gap: 22px; justify-items: center; text-align: center; }
 footer .strip { font-size: 13px; letter-spacing: .2em; text-transform: uppercase; color: var(--ink); }
@@ -683,6 +692,11 @@ footer p { color: var(--muted); font-size: 15px; max-width: 64ch; }
       <p><strong>Measured: from days to 20 minutes</strong><span>In a timed test, the skill drafted the full brief in under 5 minutes and got 15 of 15 facts right. My review took about 15 minutes. By hand, this used to take a few days.</span></p>
       <p><strong>What I still fixed</strong><span>The email named the sponsor's parental leave in its subject line, one answer made the customer look bad, and one word had British spelling. All three are now rules in the skill.</span></p>
     </div>
+    <details class="checklist">
+      <summary>See the 15 point checklist</summary>
+      <p class="intro">Written before the skill ran, so “done” was defined up front. The brief passed all 15 on the first try.</p>
+      <ol><li>Renewal date November 2, 2027, with 240 seats<span class="ok" aria-label="passed">✓</span></li><li>Measure 1, resignations: 3 before signing, 1 since, for relocation not disconnection. Met<span class="ok" aria-label="passed">✓</span></li><li>Measure 2, 60% of teams by month 3: 58% at month 3, 71% by month 8. Partly met, then exceeded<span class="ok" aria-label="passed">✓</span></li><li>Measure 3, help score: 3.1 to 3.8. Met<span class="ok" aria-label="passed">✓</span></li><li>Says results happened “alongside” or “since,” never “because of”<span class="ok" aria-label="passed">✓</span></li><li>Names a miss honestly: Portugal at 41% in month 3, a Lisbon slot from month 6, 57% by month 8<span class="ok" aria-label="passed">✓</span></li><li>Risk: medium, mainly because the sponsor’s leave starts August 16, during the renewal window<span class="ok" aria-label="passed">✓</span></li><li>Spots the 35 people not covered (275 people, 240 seats)<span class="ok" aria-label="passed">✓</span></li><li>Recommends renew and expand to 275 seats<span class="ok" aria-label="passed">✓</span></li><li>Proposes no price or discount<span class="ok" aria-label="passed">✓</span></li><li>Objections include the finance budget review and “can we run this ourselves”<span class="ok" aria-label="passed">✓</span></li><li>Timeline: July 5 prep, August 4 value review before the leave, September 3 proposal, October 3 signature<span class="ok" aria-label="passed">✓</span></li><li>Flags gaps instead of inventing them: engagement survey, finance contact, budget figure<span class="ok" aria-label="passed">✓</span></li><li>Includes a value review outline and an invitation email draft<span class="ok" aria-label="passed">✓</span></li><li>No made up numbers anywhere<span class="ok" aria-label="passed">✓</span></li></ol>
+    </details>
   </section>
 
   <section class="case" aria-labelledby="case-title" style="display:grid;gap:30px">
