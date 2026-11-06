@@ -49,10 +49,12 @@ body::after {
   padding-left: max(16px, env(safe-area-inset-left, 0px));
   padding-right: max(16px, env(safe-area-inset-right, 0px));
   display: grid;
+  grid-template-columns: minmax(0, 1fr);
   gap: 88px;
 }
 h1, h2, h3 { font-family: var(--font-display); font-weight: 400; text-wrap: balance; margin: 0; letter-spacing: -.01em; }
 p { margin: 0; }
+[hidden] { display: none !important; }
 b, strong { font-weight: 600; }
 .label {
   font-family: var(--font-body);
@@ -243,6 +245,10 @@ footer p { color: var(--muted); font-size: 15px; max-width: 64ch; }
   .brand { padding: 18px 26px; }
   .compare { grid-template-columns: 1fr; }
   .start-links { grid-template-columns: 1fr; }
+  .brand { padding: 16px 18px; }
+  .brand h1 { font-size: clamp(40px, 13vw, 52px); }
+  .brand svg { right: 0; }
+  .hero { padding: 44px 16px 28px; }
   .compare > div + div { border-left: 0; border-top: 1px solid var(--line); }
   .stage { grid-template-columns: 40px minmax(0, 1fr); gap: 0 12px; }
   .num { width: 40px; height: 40px; font-size: 13px; }
