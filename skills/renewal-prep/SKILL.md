@@ -52,7 +52,7 @@ If data is missing, say so in the brief. Never fill gaps with estimates presente
 
    Explain the reasoning. Never propose a discount or a price. Pricing is for the CSM and finance to decide.
 
-5. **Prepare for objections.** List the 3 to 5 most likely objections and an honest answer to each.
+5. **Prepare for objections.** List the 3 to 5 most likely objections and an honest answer to each. Keep answers generous: never make the customer look bad for what they tried before. Talk about what changed, not who failed.
 
 6. **Build the timeline,** counted back from the renewal date:
    - 120 days: prep starts, data pulled
@@ -60,7 +60,7 @@ If data is missing, say so in the brief. Never fill gaps with estimates presente
    - 60 days: renewal proposal sent
    - 30 days: signature target
 
-7. **Draft the materials:** an outline for the value review and the email inviting the sponsor to it. The CSM edits and sends.
+7. **Draft the materials:** an outline for the value review and the email inviting the sponsor to it. The CSM edits and sends. Keep personal details (leave, health, family) out of subject lines and keep the email strictly professional. Match the customer's spelling (US English for US customers).
 
 ## Output format
 
@@ -122,3 +122,4 @@ When the CSM shares notes from the review:
 | Date | What we learned | What changed |
 |---|---|---|
 | 2026-10-30 | Skill created. | Starting version. Honesty about misses is built in as a step. |
+| 2026-11-06 | First timed test on the Wobbly Goat data: brief in under 5 minutes, about 15 minutes of CSM review, 15 of 15 facts correct, no invented numbers. The reviewer still changed three things: the sponsor's parental leave was named in the email subject line, one objection answer pointed at the customer's past program failing, and British spelling ("programme") appeared in a US brief. | Added tone, privacy and spelling rules to steps 5 and 7. |
